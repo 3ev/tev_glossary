@@ -1,6 +1,6 @@
 #TYPO3 Glossary Extension
 
-> Define a glossary of words to be higlighted across your TYPO3 site
+> Define a glossary of words to be higlighted across your TYPO3 site.
 
 ##Installation
 
