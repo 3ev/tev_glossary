@@ -1,0 +1,33 @@
+{
+    "name": "3ev/tev_glossary",
+    "description": "3ev Glossary TYPO3 Extension",
+    "type": "typo3-cms-extension",
+    "homepage": "https://github.com/3ev/tev_glossary",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "3ev",
+            "homepage": "http://www.3ev.com/",
+            "role": "Developer"
+        },
+        {
+            "name": "Ben Constable",
+            "email": "benconstable@3ev.com",
+            "homepage": "http://github.com/BenConstable",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tev\\TevLabel\\": "Classes/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}
