@@ -1,5 +1,7 @@
 #TYPO3 Glossary Extension
 
+[![Latest Stable Version](https://poser.pugx.org/3ev/tev_glossary/version)](https://packagist.org/packages/3ev/tev_glossary) [![License](https://poser.pugx.org/3ev/tev_glossary/license)](https://packagist.org/packages/3ev/tev_glossary)
+
 > Define a glossary of words to be higlighted across your TYPO3 site.
 
 ##Installation
