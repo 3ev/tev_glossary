@@ -28,7 +28,7 @@ via Typoscript, Fluid or VHS. Here's an example using VHS:
 <v:asset.script name="tev-glossary" path="EXT:tev_glossary/Resources/Public/js/tev-glossary.js" standalone="1" />
 ```
 
-This file needs to be included **after** jQuery and the Boostrap Javascript,
+This file needs to be included **after** jQuery and the Boostrap javascript,
 ideally in your page footer.
 
 ##Configuration
@@ -36,15 +36,15 @@ ideally in your page footer.
 The following Typoscript constants are available for you to configure the plugin
 with:
 
-####plugin.tx_tevglossary.config.selector
+**plugin.tx_tevglossary.config.selector**
 
 `p` by default. The CSS selector used to search for text on the page to highlight.
 
-####plugin.tx_tevglossary.config.popover_position
+**plugin.tx_tevglossary.config.popover_position**
 
 `top` by default. The Bootstrap popover display position.
 
-####plugin.tx_tevglossary.config.popover_toggle
+**plugin.tx_tevglossary.config.popover_toggle**
 
 `hover` by default. The Bootstrap popover display trigger.
 
