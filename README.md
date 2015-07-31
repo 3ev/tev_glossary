@@ -67,9 +67,9 @@ The Glossary Browser Plugin generates the following markup:
     <li class="tev-glossary-index-group">
         <h2 id="index-B" class="tev-glossary-index-group-letter">B</h2>
 
-        <dl class="tev-glossary-index-items">
-            <dt class="tev-glossary-index-item-term">Example term</dt>
-            <dd class="tev-glossary-index-definition">Example definition</dd>
+        <dl class="tev-glossary-index-entries">
+            <dt class="tev-glossary-index-entry-term">Example term</dt>
+            <dd class="tev-glossary-index-entry-definition">Example definition</dd>
         </dl>
 
         <a href="#" class="tev-glossary-index-back-to-top">Back to top</a>
