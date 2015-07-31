@@ -16,5 +16,5 @@ CREATE TABLE tx_tevglossary_domain_model_entry (
     PRIMARY KEY (uid),
     KEY parent (pid),
     KEY deleted (deleted),
-    KEY deleted (hidden)
+    KEY hidden (hidden)
 );
