@@ -38,7 +38,7 @@
                 // Create the wrapper
 
                 var withPopover = $('<span/>')
-                    .addClass('tev-glossary-entry')
+                    .addClass('tev-glossary-highlighted')
                     .attr('data-toggle', 'popover')
                     .attr('data-content', entry.definition)
                     .attr('title', entry.term)

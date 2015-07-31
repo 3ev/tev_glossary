@@ -52,7 +52,7 @@ with:
 
 ##Custom styling
 
-Each glossary entry will be wrapped in a `<span/>` with a class of `tev-glossary-entry`.
+Each glossary entry will be wrapped in a `<span/>` with a class of `tev-glossary-highlight`.
 Each popover uses the default Bootstrap markup, but is given an additional class
 of `tev-glossary-popover`. You can style these elements as you wish, no default
 styling is included.
