@@ -24,19 +24,17 @@
                 {letter}
             </h2>
 
-            <ul class="tev-glossary-index-items">
+            <dl class="tev-glossary-index-items">
                 <f:for each="{entries}" as="entry">
-                    <li class="tev-glossary-index-item">
-                        <h3 class="tev-glossary-index-item-term">
-                            {entry.term}
-                        </h3>
+                    <dt class="tev-glossary-index-item-term">
+                        {entry.term}
+                    </dt>
 
-                        <p class="tev-glossary-index-definition">
-                            {entry.definition}
-                        </p>
-                    </li>
+                    <dd class="tev-glossary-index-definition">
+                        {entry.definition}
+                    </dd>
                 </f:for>
-            </ul>
+            </dl>
 
             <a href="{url}#" class="tev-glossary-index-back-to-top">
                 Back to top
