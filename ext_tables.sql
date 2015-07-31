@@ -10,7 +10,7 @@ CREATE TABLE tx_tevglossary_domain_model_entry (
     cruser_id int(11) unsigned DEFAULT '0' NOT NULL,
     deleted tinyint(4) unsigned DEFAULT '0' NOT NULL,
     hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
-    term varchar(255) NOT NULL,
+    term varchar(255) DEFAULT '' NOT NULL,
     definition text NOT NULL,
 
     PRIMARY KEY (uid),
