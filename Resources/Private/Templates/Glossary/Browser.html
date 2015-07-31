@@ -1,0 +1,46 @@
+<ul class="tev-glossary-key">
+    <f:for each="{key}" key="letter" as="count">
+        <li class="tev-glossary-key-item {f:if(condition: '{count} > 0', then: 'tev-glossary-key-item-linked')}">
+            <f:if condition="{count} > 0">
+                <f:then>
+                    <a href="{url}#index-{letter}" class="tev-glossary-key-item-content-link">
+                        {letter}
+                    </a>
+                </f:then>
+                <f:else>
+                    <span class="tev-glossary-key-item-content-nolink">
+                        {letter}
+                    </span>
+                </f:else>
+            </f:if>
+        </li>
+    </f:for>
+</ul>
+
+<ul class="tev-glossary-index">
+    <f:for each="{index}" key="letter" as="entries">
+        <li class="tev-glossary-index-group">
+            <h2 id="index-{letter}" class="tev-glossary-index-group-letter">
+                {letter}
+            </h2>
+
+            <ul class="tev-glossary-index-items">
+                <f:for each="{entries}" as="entry">
+                    <li class="tev-glossary-index-item">
+                        <h3 class="tev-glossary-index-item-term">
+                            {entry.term}
+                        </h3>
+
+                        <p class="tev-glossary-index-definition">
+                            {entry.definition}
+                        </p>
+                    </li>
+                </f:for>
+            </ul>
+
+            <a href="{url}#" class="tev-glossary-index-back-to-top">
+                Back to top
+            </a>
+        </li>
+    </f:for>
+</ul>

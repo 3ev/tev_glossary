@@ -4,7 +4,7 @@ if (!defined('TYPO3_MODE')) {
     die('Access denied.');
 }
 
-// Automatically include extension Typoscript.
+// Automatically include extension Typoscript
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptConstants(
     '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/Typoscript/constants.ts">'
@@ -14,16 +14,29 @@ if (!defined('TYPO3_MODE')) {
     '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/Typoscript/setup.ts">'
 );
 
-// Configure the glossary plugin.
+// Configure the glossary ajax plugin
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'Tev.' . $_EXTKEY,
     'Glossary',
     [
-        'Entry' => 'indexJson,'
+        'Entry' => 'indexJson'
     ],
     [
         'Entry' => 'indexJson'
+    ]
+);
+
+// Configure the glossary browser plugin
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    'Tev.' . $_EXTKEY,
+    'GlossaryBrowser',
+    [
+        'Glossary' => 'browse'
+    ],
+    [
+        'Glossary' => 'browse'
     ]
 );
 
