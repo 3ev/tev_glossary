@@ -9,6 +9,9 @@
             <trans-unit id="tev_glossary.plugin.glossarybrowser.description">
                 <source>Show the list of all glossary entries on the site.</source>
             </trans-unit>
+            <trans-unit id="tev_glossary.glossary.browse.back_to_top">
+                <source>Back to top</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
