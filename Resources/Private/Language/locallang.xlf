@@ -6,7 +6,7 @@
             <trans-unit id="tev_glossary.plugin.glossarybrowser.title">
                 <source>Glossary Browser Plugin</source>
             </trans-unit>
-            <trans-unit id="tev_faqs.plugin.faqcategory.description">
+            <trans-unit id="tev_glossary.plugin.glossarybrowser.description">
                 <source>Show the list of all glossary entries on the site.</source>
             </trans-unit>
         </body>
