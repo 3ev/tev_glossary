@@ -43,4 +43,4 @@ if (!defined('TYPO3_MODE')) {
 // Register a link handler to generate extbase links
 
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_content.php']['typolinkLinkHandler']['tevglossaryeb']
-    = 'Tev\\TevGlossary\\Util\\ExtbaseLink';
+    = 'Tev\\TevGlossary\\Utility\\ExtbaseLink';

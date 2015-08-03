@@ -1,5 +1,5 @@
 <?php
-namespace Tev\TevGlossary\Util;
+namespace Tev\TevGlossary\Utility;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
