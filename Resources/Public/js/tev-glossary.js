@@ -109,10 +109,6 @@
 
     // Create and run service instance.
 
-    var t = new TevGlossary({
-        url: config.url
-    })
-
-    t.run()
+    new TevGlossary(config).run()
 
 })(window.jQuery, window.tevGlossaryConfig);
