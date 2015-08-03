@@ -83,7 +83,7 @@
 
         // Run the Bootstrap popover on the created glossary terms
 
-        $('.tev-glossary-entry').popover({
+        $('.tev-glossary-highlighted').popover({
             placement: this.options.position
           , trigger: this.options.toggle
           , template: '<div class="popover tev-glossary-popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
