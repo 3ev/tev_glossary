@@ -38,6 +38,7 @@ page {
                 <script>
                     window.tevGlossaryConfig = {
                         url: '|'
+                      , enable: {$plugin.tx_tevglossary.config.enable}
                       , selector: '{$plugin.tx_tevglossary.config.selector}'
                       , position: '{$plugin.tx_tevglossary.config.popover_position}'
                       , toggle: '{$plugin.tx_tevglossary.config.popover_toggle}'

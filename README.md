@@ -84,6 +84,11 @@ CSS classes are set for every element, so the markup is very easy to style.
 The following Typoscript constants are available for you to configure the plugin
 with:
 
+**plugin.tx_tevglossary.config.enable**
+
+`1` by default. Enable glossary highlighting. You can use this to disable glossary
+highlighting on certain pages with Extension Templates.
+
 **plugin.tx_tevglossary.config.selector**
 
 `p` by default. The CSS selector used to search for text on the page to highlight.

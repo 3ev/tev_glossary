@@ -9,6 +9,7 @@
             selector: 'p'
           , position: 'top'
           , toggle: 'hover'
+          , enable: true
         }
 
         this.options = $.extend(defaults, options)
@@ -97,14 +98,16 @@
     TevGlossary.prototype.run = function () {
         var self = this
 
-        $.ajax({
-            type: 'GET'
-          , url: this.options.url
-          , dataType: 'json'
-          , success: function (data) {
-                self.searchForEntries(data)
-            }
-        })
+        if (this.options.enable) {
+            $.ajax({
+                type: 'GET'
+              , url: this.options.url
+              , dataType: 'json'
+              , success: function (data) {
+                    self.searchForEntries(data)
+                }
+            })
+        }
     }
 
     // Create and run service instance.

@@ -1,3 +1,8 @@
+# cat=TEV_GLOSSARY/config; type=integer; label=Enable the glossary script
+plugin.tx_tevglossary.config {
+    enable = 1
+}
+
 # cat=TEV_GLOSSARY/config; type=string; label=Glossary target CSS selector
 plugin.tx_tevglossary.config {
     selector = p
