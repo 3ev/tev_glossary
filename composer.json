@@ -20,6 +20,12 @@
     "require": {
         "php": ">=5.5.0"
     },
+    "require-dev": {
+        "3ev/typo3-utils": "~1.0"
+    },
+    "suggest": {
+        "3ev/typo3-utils": "Required but must be included in your root composer.json due to TYPO3 bug. See require-dev for version"
+    },
     "autoload": {
         "psr-4": {
             "Tev\\TevGlossary\\": "Classes/"
