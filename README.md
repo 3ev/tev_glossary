@@ -52,27 +52,27 @@ as you wish, no default styling is included.
 The Glossary Browser Plugin generates the following markup:
 
 ```html
-<ul class="tev-glossary-key">
-    <li class="tev-glossary-key-item">
-        <span class="tev-glossary-key-item-content-nolink">A</span>
+<ul class="tev-glossary__key">
+    <li class="tev-glossary__key__item">
+        <span class="tev-glossary__key__item__content--nolink">A</span>
     </li>
 
-    <li class="tev-glossary-key-item tev-glossary-key-item-linked">
-        <a href="#index-B" class="tev-glossary-key-item-content-link">B</a>
+    <li class="tev-glossary__key__item tev-glossary__key__item--linked">
+        <a href="#index-B" class="tev-glossary__key__item__content--link">B</a>
     </li>
     ...
 </ul>
 
-<ul class="tev-glossary-index">
-    <li class="tev-glossary-index-group">
-        <h2 id="index-B" class="tev-glossary-index-group-letter">B</h2>
+<ul class="tev-glossary__index">
+    <li class="tev-glossary__index__group">
+        <h2 id="index-B" class="tev-glossary__index__group__letter">B</h2>
 
-        <dl class="tev-glossary-index-entries">
-            <dt class="tev-glossary-index-entry-term">Example term</dt>
-            <dd class="tev-glossary-index-entry-definition">Example definition</dd>
+        <dl class="tev-glossary__index__group__entries">
+            <dt class="tev-glossary__index__group__entries__term">Example term</dt>
+            <dd class="tev-glossary__index__group__entries__definition">Example definition</dd>
         </dl>
 
-        <a href="#" class="tev-glossary-index-back-to-top">Back to top</a>
+        <a href="#" class="tev-glossary__index__group__back-to-top">Back to top</a>
     </li>
 </ul>
 ```

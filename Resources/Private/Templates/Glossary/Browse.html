@@ -1,14 +1,14 @@
-<ul class="tev-glossary-key">
+<ul class="tev-glossary__key">
     <f:for each="{key}" key="letter" as="count">
-        <li class="tev-glossary-key-item {f:if(condition: '{count} > 0', then: 'tev-glossary-key-item-linked')}">
+        <li class="tev-glossary__key__item {f:if(condition: '{count} > 0', then: 'tev-glossary__key__item--linked')}">
             <f:if condition="{count} > 0">
                 <f:then>
-                    <a href="{url}#index-{letter}" class="tev-glossary-key-item-content-link">
+                    <a href="{url}#index-{letter}" class="tev-glossary__key__item__content--link">
                         {letter}
                     </a>
                 </f:then>
                 <f:else>
-                    <span class="tev-glossary-key-item-content-nolink">
+                    <span class="tev-glossary__key__item__content--nolink">
                         {letter}
                     </span>
                 </f:else>
@@ -17,26 +17,26 @@
     </f:for>
 </ul>
 
-<ul class="tev-glossary-index">
+<ul class="tev-glossary__index">
     <f:for each="{index}" key="letter" as="entries">
-        <li class="tev-glossary-index-group">
-            <h2 id="index-{letter}" class="tev-glossary-index-group-letter">
+        <li class="tev-glossary__index__group">
+            <h2 id="index-{letter}" class="tev-glossary__index__group__letter">
                 {letter}
             </h2>
 
-            <dl class="tev-glossary-index-entries">
+            <dl class="tev-glossary__index__group__entries">
                 <f:for each="{entries}" as="entry">
-                    <dt class="tev-glossary-index-entry-term">
+                    <dt class="tev-glossary__index__group__entries__term">
                         {entry.term}
                     </dt>
 
-                    <dd class="tev-glossary-index-entry-definition">
+                    <dd class="tev-glossary__index__group__entries__definition">
                         {entry.definition}
                     </dd>
                 </f:for>
             </dl>
 
-            <a href="{url}#" class="tev-glossary-index-back-to-top">
+            <a href="{url}#" class="tev-glossary__index__group__back-to-top">
                 <f:translate key="tev_glossary.glossary.browse.back_to_top" />
             </a>
         </li>
