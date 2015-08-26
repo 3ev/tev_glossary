@@ -1,4 +1,24 @@
 #
+# Extbase config.
+#
+
+plugin.tx_tevglossary {
+    view {
+        templateRootPaths {
+            0 = {$plugin.tx_tevglossary.view.templateRootPath}
+        }
+
+        partialRootPaths {
+            0 = {$plugin.tx_tevglossary.view.partialRootPath}
+        }
+
+        layoutRootPaths {
+            0 = {$plugin.tx_tevglossary.view.layoutRootPath}
+        }
+    }
+}
+
+#
 # Ajax page type for the glossary plugin.
 #
 

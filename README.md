@@ -79,6 +79,26 @@ The Glossary Browser Plugin generates the following markup:
 
 CSS classes are set for every element, so the markup is very easy to style.
 
+###Overriding Templates
+
+You can fully override any templates in this extension in the normal Extbase way,
+by adding the following Typoscript in your own extension:
+
+```
+plugin.tx_tevglossary {
+    view {
+        templateRootPaths {
+            # The default index is 0, so use any index from 1 upwards
+
+            1 = EXT:your_ext/Path/To/Template/Overrides/
+        }
+    }
+}
+```
+
+You can do the same for `partialRootPaths` or `layoutRootPaths` too. Any templates
+added to the configured directories will be preferred over the default ones.
+
 ##Configuration
 
 The following Typoscript constants are available for you to configure the plugin

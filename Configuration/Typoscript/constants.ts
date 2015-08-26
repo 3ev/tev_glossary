@@ -1,3 +1,7 @@
+plugin.tx_tevglossary.view.templateRootPath = EXT:tev_glossary/Resources/Private/Templates/
+plugin.tx_tevglossary.view.partialRootPath = EXT:tev_glossary/Resources/Private/Partials/
+plugin.tx_tevglossary.view.layoutRootPath = EXT:tev_glossary/Resources/Private/Layouts/
+
 # cat=TEV_GLOSSARY/config; type=integer; label=Enable the glossary script
 plugin.tx_tevglossary.config {
     enable = 1
