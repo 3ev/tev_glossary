@@ -20,13 +20,15 @@
      * for the given entry, if that entry exists.
      */
 
-    TevGlossary.prototype.replaceTextInNode = function (node, entry) {
+    TevGlossary.prototype.replaceTextInNode = function (node, entry, noTraversal) {
 
         // Check if the current node is a text node. If it is, search for the
-        // glossary term. If not, iterate its children and search them
+        // glossary term. If not, iterate its direct child text nodes and search
+        // them
 
         if (node.nodeType === 3) {
             var pos = node.nodeValue.toLowerCase().indexOf(entry.term.toLowerCase())
+
             if (pos >= 0) {
                 // Find the start of the chunk to replace
 
@@ -56,9 +58,9 @@
             } else {
                 return 0
             }
-        } else if (node.nodeType === 1 && node.childNodes) {
+        } else if (!noTraversal && (node.nodeType === 1 && node.childNodes)) {
             for (var i = 0; i < node.childNodes.length; i++) {
-                i += this.replaceTextInNode(node.childNodes[i], entry)
+                i += this.replaceTextInNode(node.childNodes[i], entry, true)
             }
 
             return 0
