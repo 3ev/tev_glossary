@@ -28,8 +28,27 @@
 
         if (node.nodeType === 3) {
             var pos = node.nodeValue.toLowerCase().indexOf(entry.term.toLowerCase())
+              , wr = new RegExp('\\W')
+              , wb
+              , wa
 
-            if (pos >= 0) {
+            // Check for non-word chars before
+
+            if (pos > 0) {
+                wb = wr.test(node.nodeValue.substr(pos - 1, 1))
+            } else {
+                wb = true
+            }
+
+            // Check for non-word chars after
+
+            if ((pos >= 0) && ((pos + entry.term.length - 1) < (node.nodeValue.length - 1))) {
+                wa = wr.test(node.nodeValue.substr(pos + entry.term.length, 1))
+            } else {
+                wa = true
+            }
+
+            if ((pos >= 0) && wb && wa) {
                 // Find the start of the chunk to replace
 
                 var replace = node.splitText(pos)
