@@ -21,9 +21,6 @@ if (!defined('TYPO3_MODE')) {
     'Glossary',
     [
         'Entry' => 'indexJson'
-    ],
-    [
-        'Entry' => 'indexJson'
     ]
 );
 
@@ -32,9 +29,6 @@ if (!defined('TYPO3_MODE')) {
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'Tev.' . $_EXTKEY,
     'GlossaryBrowser',
-    [
-        'Glossary' => 'browse'
-    ],
     [
         'Glossary' => 'browse'
     ]
