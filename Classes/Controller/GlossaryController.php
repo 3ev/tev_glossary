@@ -53,7 +53,7 @@ class GlossaryController extends ActionController
                 $l = strtoupper($entry->getTerm()[0]);
 
                 // If first letter is not in the alphabet, we put the term in
-                // the 'Misc.' category
+                // the '#' category
 
                 if (!in_array($l, $alphabet)) {
                     $misc[] = $entry;
@@ -67,7 +67,7 @@ class GlossaryController extends ActionController
             }
 
             if (count($misc)) {
-                $index['Misc.'] = $misc;
+                $index['#'] = $misc;
             }
 
             $this->indexedEntries = $index;
@@ -95,10 +95,10 @@ class GlossaryController extends ActionController
             }
         }
 
-        if (isset($entries['Misc.'])) {
-            $key['Misc.'] = count($entries['Misc.']);
+        if (isset($entries['#'])) {
+            $key['#'] = count($entries['#']);
         } else {
-            $key['Misc.'] = 0;
+            $key['#'] = 0;
         }
 
         return $key;
