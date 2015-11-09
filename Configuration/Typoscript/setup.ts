@@ -62,6 +62,7 @@ page {
                       , selector: '{$plugin.tx_tevglossary.config.selector}'
                       , position: '{$plugin.tx_tevglossary.config.popover_position}'
                       , toggle: '{$plugin.tx_tevglossary.config.popover_toggle}'
+                      , firstOccOnly: {$plugin.tx_tevglossary.config.first_occurence_only}
                     }
                 </script>
             )

@@ -21,3 +21,8 @@ plugin.tx_tevglossary.config {
 plugin.tx_tevglossary.config {
     popover_toggle = hover
 }
+
+# cat=TEV_GLOSSARY/config; type=integer; label=Display only on first occurrence
+plugin.tx_tevglossary.config {
+    first_occurence_only = 0
+}
