@@ -1,5 +1,7 @@
 (function ($, config) {
 
+    var justOnce = []
+
     /*
      * Constructor.
      */
@@ -10,6 +12,7 @@
           , position: 'top'
           , toggle: 'hover'
           , enable: true
+          , firstOccOnly: true
         }
 
         this.options = $.extend(defaults, options)
@@ -66,9 +69,16 @@
                     .attr('title', entry.term)
                     .append(replace.cloneNode(true))
 
-                // Insert the replacement back into the parent node
+                // Insert the replacement back into the parent node.
 
-                replace.parentNode.replaceChild(withPopover[0], replace)
+                if(!(justOnce.indexOf(entry.term.toLowerCase()) >= 0)) {
+                    replace.parentNode.replaceChild(withPopover[0], replace)
+
+                    // Only the first occurrence of each word will be used if this option is true.
+                    if (this.options.firstOccOnly) {
+                        justOnce.push(entry.term.toLowerCase())
+                    }
+                }
 
                 // Return a skip value, to ensure we don't iterate the replaced
                 // node and create an infinite loop

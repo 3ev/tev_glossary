@@ -121,6 +121,10 @@ highlighting on certain pages with Extension Templates.
 
 `hover` by default. The Bootstrap popover display trigger.
 
+**plugin.tx_tevglossary.config.first_occurence_only**
+
+`0` by default. Display definitions only on first occurrence of the glossary item in the page.
+
 ##License
 
 MIT © 3ev
