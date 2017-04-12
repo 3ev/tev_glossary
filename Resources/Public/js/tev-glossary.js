@@ -16,6 +16,11 @@
         }
 
         this.options = $.extend(defaults, options)
+        
+        // If the window is in https, set the URL to make an https request instead of http
+        if(window.location.protocol === 'https:') {
+            this.options.url = this.options.url.replace(/^http:\/\//i, 'https://');
+        }
     }
 
     /*
